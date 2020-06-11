@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 
 import Header from '../../components/header';
+
 import { Container, Content, List } from './styles';
 
 const Dashboard = () => {
@@ -9,7 +10,7 @@ const Dashboard = () => {
   return (
     <Container>
       <Header />
-      
+
       <Content>
         <h2>Procure por estabelecimentos feitos para você!</h2>
         <List>
