@@ -1,5 +1,5 @@
 import React from 'react';
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 
 import GlobalStyle from '../styles/global';
@@ -40,7 +40,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <Head>
           <title>POZI</title>
         </Head>
@@ -50,7 +50,7 @@ class MyApp extends App {
         <Component
           {...pageProps}
         />        
-      </Container>
+      </>
     );
   }
 }
