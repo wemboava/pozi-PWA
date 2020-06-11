@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "next": "^9.4.4",
+    "next-images": "^1.4.0",
     "next-pwa": "^2.5.0",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
