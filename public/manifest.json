@@ -4,7 +4,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
+  "background_color": "radial-gradient(100% 256% at 0% 0%,#F5762A 0%,#F2AC2F 100%)",
   "start_url": "/",
   "icons": [
     {
