@@ -7,7 +7,7 @@ const Header = () => {
   const router = useRouter()
   return (
     <HeaderWrapper>
-      <div onClick={() => router('/')} className="logo">
+      <div onClick={() => router.push('/')} className="logo">
         <img src="/static/images/logo.png" />
         <span>POZI</span>
       </div>

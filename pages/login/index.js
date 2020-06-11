@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import Input from '../../components/input';
@@ -8,6 +8,7 @@ import Button from '../../components/button';
 import { Container, Content, Footer } from './styles';
 
 const Login = () => {
+  const router = useRouter();
   const [user, setUser] = useState({ email: '', password: '' });
 
   const handleChange = useCallback(event => {
@@ -19,7 +20,7 @@ const Login = () => {
 
   return (
     <Container>
-      <div onClick={() => router('/')} className="logo">
+      <div onClick={() => router.push('/')} className="logo">
         <img src="/static/images/logo.png" />
         <span>POZI</span>
       </div>

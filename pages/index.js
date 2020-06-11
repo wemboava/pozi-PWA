@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import Dashboard from './dashboard'
 
 export default () => {
   // This hook only run once in browser after the component is rendered for the first time.
@@ -72,7 +73,7 @@ export default () => {
 
   return (
     <>
-      <h1>Next.js + PWA = AWESOME!</h1>
+      <Dashboard />
     </>
   )
 }

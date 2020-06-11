@@ -16,6 +16,7 @@ const Dashboard = () => {
           <li>
             <Link href="/estabelecimentos/restaurante">
               <a>
+                <div className="bg-image"></div>
                 <img src="/static/images/pousada.png" />
                 <span>Pousadas</span>
               </a>
@@ -24,6 +25,7 @@ const Dashboard = () => {
           <li>
             <Link href="/estabelecimentos/restaurante">
               <a>
+                <div className="bg-image"></div>
                 <img src="/static/images/posto-gasolina.png" />
                 <span>Postos</span>
               </a>
@@ -32,6 +34,7 @@ const Dashboard = () => {
           <li>
             <Link href="/estabelecimentos/restaurante">
               <a>
+                <div className="bg-image"></div>
                 <img src="/static/images/hospital.png" />
                 <span>Hospitais</span>
               </a>
@@ -40,6 +43,7 @@ const Dashboard = () => {
           <li>
             <Link href="/estabelecimentos/restaurante">
               <a>
+                <div className="bg-image"></div>
                 <img src="/static/images/restaurante.png" />
                 <span>Restaurante</span>
               </a>
@@ -48,6 +52,7 @@ const Dashboard = () => {
           <li>
             <Link href="/estabelecimentos/restaurante">
               <a>
+                <div className="bg-image"></div>
                 <img src="/static/images/mecanico.png" />
                 <span>Mecânicos</span>
               </a>

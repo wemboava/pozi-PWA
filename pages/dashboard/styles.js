@@ -31,6 +31,7 @@ export const List = styled.ul`
   padding: 25px 0;
   & li {
     width: 50%;
+
     & a {
       margin: 15px;
       display: flex;
@@ -44,9 +45,34 @@ export const List = styled.ul`
       color: #6D6966;
       font-size: 1.2em;
       font-weight: 500;
-
+      transition: all 0.3s ease-in-out;
       & span {
         padding-bottom: 5px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        min-width: 300px;
+        /* height: 385px; */
+        top: 0;
+        opacity: 0;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: opacity 0.3s ease-in-out;
+      }
+      /* ${props => props.disabled ? '' : ''}; */
+      &:hover {
+        transform: scale(1.1);
+        & .bg-image {
+          background: linear-gradient(180deg,rgba(0, 0, 0, 0) 76.56%, rgba(0,0,0,0.7) 100%);
+        }
+      }
+
+      &:hover::after {
+        opacity: 1;
       }
     }
   }
