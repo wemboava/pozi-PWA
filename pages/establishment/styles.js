@@ -1,6 +1,23 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  .back {
+    max-width: 768px;
+    margin: 10px auto 0 10px;
+    @media(min-width: 768px) {
+      margin: 10px auto 0 auto;
+    }
+    button {
+      background-color: transparent;
+      color: #fff;
+      font-size: 1.3em;
+      font-weight: 600;
+      & svg {
+        margin-right: 10px;
+      }
+    }
+  }
+`;
 
 export const Content = styled.section`
   min-height: 100vh;
@@ -14,13 +31,15 @@ export const Content = styled.section`
   transition: .4s;
   @media(min-width: 768px) {
     height: auto;
+    min-height: auto;
     border-radius: 45px;
     padding: 40px 40px 15px 40px;
   }
   & h2 {
     color: #6D6966;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    text-transform: capitalize;
   }
 `;
 
@@ -29,8 +48,12 @@ export const List = styled.ul`
   flex-wrap: wrap;
   list-style: none;
   padding: 25px 0;
+  display: flex;
   & li {
     width: 100%;
+    @media(min-width: 768px) {
+      width: 50%;
+    }
   }
 `;
 
@@ -39,6 +62,9 @@ export const Card = styled.div`
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.11);
   border-radius: 10px;
   margin: 10px 10px 25px 10px;
+  @media(min-width: 768px) {
+    margin: 15px;
+  }
   & img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
