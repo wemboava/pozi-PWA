@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import Head from 'next/head'
 
 export default () => {
   // This hook only run once in browser after the component is rendered for the first time.

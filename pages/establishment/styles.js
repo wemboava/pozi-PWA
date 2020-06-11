@@ -34,6 +34,7 @@ export const Content = styled.section`
     min-height: auto;
     border-radius: 45px;
     padding: 40px 40px 15px 40px;
+    margin-bottom: 30px;
   }
   & h2 {
     color: #6D6966;

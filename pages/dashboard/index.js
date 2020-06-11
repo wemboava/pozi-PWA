@@ -1,9 +1,11 @@
 import React from 'react';
+import Link from 'next/link'
 
 import Header from '../../components/header';
 import { Container, Content, List } from './styles';
 
 const Dashboard = () => {
+
   return (
     <Container>
       <Header />
@@ -12,34 +14,44 @@ const Dashboard = () => {
         <h2>Procure por estabelecimentos feitos para você!</h2>
         <List>
           <li>
-            <div>
-              <img src="/static/images/pousada.png" />
-              <span>Pousadas</span>
-            </div>
+            <Link href="/estabelecimentos/restaurante">
+              <a>
+                <img src="/static/images/pousada.png" />
+                <span>Pousadas</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <div>
-              <img src="/static/images/posto-gasolina.png" />
-              <span>Postos</span>
-            </div>
+            <Link href="/estabelecimentos/restaurante">
+              <a>
+                <img src="/static/images/posto-gasolina.png" />
+                <span>Postos</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <div>
-              <img src="/static/images/hospital.png" />
-              <span>Hospitais</span>
-            </div>
+            <Link href="/estabelecimentos/restaurante">
+              <a>
+                <img src="/static/images/hospital.png" />
+                <span>Hospitais</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <div>
-              <img src="/static/images/restaurante.png" />
-              <span>Restaurante</span>
-            </div>
+            <Link href="/estabelecimentos/restaurante">
+              <a>
+                <img src="/static/images/restaurante.png" />
+                <span>Restaurante</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <div>
-              <img src="/static/images/mecanico.png" />
-              <span>Mecânicos</span>
-            </div>
+            <Link href="/estabelecimentos/restaurante">
+              <a>
+                <img src="/static/images/mecanico.png" />
+                <span>Mecânicos</span>
+              </a>
+            </Link>
           </li>
         </List>
       </Content>

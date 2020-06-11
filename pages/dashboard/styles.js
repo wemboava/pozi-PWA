@@ -31,7 +31,7 @@ export const List = styled.ul`
   padding: 25px 0;
   & li {
     width: 50%;
-    & div {
+    & a {
       margin: 15px;
       display: flex;
       align-items: center;

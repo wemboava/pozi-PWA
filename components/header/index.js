@@ -1,10 +1,13 @@
 import React from 'react';
+import { useRouter } from 'next/router'
+
 import { HeaderWrapper } from './styles';
 
 const Header = () => {
+  const router = useRouter()
   return (
     <HeaderWrapper>
-      <div className="logo">
+      <div onClick={() => router('/')} className="logo">
         <img src="/static/images/logo.png" />
         <span>POZI</span>
       </div>

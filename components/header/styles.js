@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
   & .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
     & img {
       width: 80px;
     }
