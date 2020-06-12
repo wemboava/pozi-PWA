@@ -77,3 +77,5 @@ export const List = styled.ul`
     }
   }
 `;
+
+export default Container;

@@ -109,3 +109,5 @@ export const Card = styled.div`
     }
   }
 `;
+
+export default Container;

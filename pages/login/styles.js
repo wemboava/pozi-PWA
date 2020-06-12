@@ -65,3 +65,5 @@ export const Footer = styled.div`
     padding: 5px;
   }
 `;
+
+export default Container;
