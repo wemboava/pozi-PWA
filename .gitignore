@@ -4,6 +4,8 @@ node_modules/
 /package-lock.json
 /yarn.lock
 
+/out
+
 /public/precache.*.*.js
 /public/sw.js
 /public/workbox-*.js

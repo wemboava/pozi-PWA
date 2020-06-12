@@ -51,13 +51,11 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <Link href="/estabelecimentos/restaurante">
-              <a>
-                <div className="bg-image"></div>
-                <img src="/static/images/mecanico.png" />
-                <span>Mecânicos</span>
-              </a>
-            </Link>
+            <a href="/estabelecimentos/restaurante">
+              <div className="bg-image"></div>
+              <img src="/static/images/mecanico.png" />
+              <span>Mecânicos</span>
+            </a>
           </li>
         </List>
       </Content>
