@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 import Header from '../../components/header';
 import Ratings from '../../components/star-ratings';
@@ -26,196 +27,236 @@ const Dashboard = () => {
         <h2>{ category }s</h2>
         <List>
           <li>
-            <Card isOpen>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={5} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Aberto</span> - Fecha às 22:00 - 4km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={5} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Aberto</span> - Fecha às 22:00 - 4km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
           <li>
-            <Card isOpen={false}>
-              <img src="/static/images/frango-assado.jpg" />
-              <div className="info">
-                <div className="info__row-one">
-                  <h4>Frango Assado</h4>
-                  <Ratings onlyReading rate={4} starSize="15px" />
-                </div>
-                <div className="info__row-two">
-                  <span>
-                    <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                  </span>
-                </div>
-                <div className="info__row-three">
-                  <span>
-                    Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                  </span>
-                </div>
-                <div className="info__row-four">
-                  <button>Detalhes das avaliações</button>
-                </div>
-              </div>
-            </Card>
+            <Link href="/establishment/detail">
+              <a>
+                <Card isOpen={false}>
+                  <div className="bg-image"></div>
+                  <img src="/static/images/frango-assado.jpg" />
+                  <div className="info">
+                    <div className="info__row-one">
+                      <h4>Frango Assado</h4>
+                      <Ratings onlyReading rate={4} starSize="15px" />
+                    </div>
+                    <div className="info__row-two">
+                      <span>
+                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
+                      </span>
+                    </div>
+                    <div className="info__row-three">
+                      <span>
+                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                      </span>
+                    </div>
+                    <div className="info__row-four">
+                      <button>Detalhes das avaliações</button>
+                    </div>
+                  </div>
+                </Card>
+              </a>
+            </Link>
           </li>
         </List>
       </Content>

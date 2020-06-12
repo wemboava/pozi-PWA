@@ -1,1 +1,132 @@
-if(!self.define){const e=e=>{"require"!==e&&(e+=".js");let s=Promise.resolve();return a[e]||(s=new Promise(async s=>{if("document"in self){const a=document.createElement("script");a.src=e,document.head.appendChild(a),a.onload=s}else importScripts(e),s()})),s.then(()=>{if(!a[e])throw new Error(`Module ${e} didn’t register its module`);return a[e]})},s=(s,a)=>{Promise.all(s.map(e)).then(e=>a(1===e.length?e[0]:e))},a={require:Promise.resolve(s)};self.define=(s,t,c)=>{a[s]||(a[s]=Promise.resolve().then(()=>{let a={};const i={uri:location.origin+s.slice(1)};return Promise.all(t.map(s=>{switch(s){case"exports":return a;case"module":return i;default:return e(s)}})).then(e=>{const s=c(...e);return a.default||(a.default=s),a})}))}}define("./sw.js",["./workbox-463a2f29"],(function(e){"use strict";importScripts(),self.addEventListener("message",e=>{e.data&&"SKIP_WAITING"===e.data.type&&self.skipWaiting()}),e.clientsClaim(),e.precacheAndRoute([{url:"/",revision:"KYe1btDMX8mDX2EWaO4Jq"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/_buildManifest.js",revision:"38fa5b5ad5ef0f62f8a36237dd191642"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/_ssgManifest.js",revision:"abee47769bf307639ace4945f9cfd4ff"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/_app.js",revision:"80c260223c87683a758cc0369065539a"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/_error.js",revision:"e6e32495218a0b66171e0fb61fc67106"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/dashboard.js",revision:"29eaf78a7d3b968722fe6cc1c15b1b47"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/dashboard/styles.js",revision:"ade7170a84e88ca6157f8c2fddd8ed1f"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/establishment.js",revision:"b31497689ac8366bfcb533f92f0ab3d4"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/establishment/styles.js",revision:"c895bd87f28b74e84ced527f2e847866"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/index.js",revision:"46dd3cc260b5ebba33ca28ef11a23037"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/login.js",revision:"9b449cd013c0d14d3e2fc4b3802dd19c"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/login/styles.js",revision:"5adee1a1d1aa402124dad03820a823e1"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/register.js",revision:"55dce13af1eec2090369e806e3f8e97f"},{url:"/_next/static/KYe1btDMX8mDX2EWaO4Jq/pages/register/styles.js",revision:"5cc138fbdb437ac5e84a5087522ccc1d"},{url:"/_next/static/chunks/a8af56eb15c01737166637149fd0578cfe1b19f0.8a155c5b45b91fc67154.js",revision:"ac8929b4ffb86d2f99ab0165832384f8"},{url:"/_next/static/chunks/d302392049834e011d3e93b0fe37caffaaac0258.84dfed5f0f46c251c693.js",revision:"0679d0c8c3acf2cb7a39ea0feb9c8403"},{url:"/_next/static/chunks/fb4928ffb8ca27f05b08abc19d842910d0373922.f78dab3f77be1aaff8d6.js",revision:"306b9675a11b549d82e9561462074f03"},{url:"/_next/static/chunks/framework.c6faae2799416a6da8e8.js",revision:"a07dacbb502f5257565ceb7d460e71e6"},{url:"/_next/static/runtime/main-a7b9071a27744a0a73e8.js",revision:"caef5d0decb18cf148c758e45c311b02"},{url:"/_next/static/runtime/polyfills-901ba2ee5b659327f527.js",revision:"559d2fb61183f8f5a7a7eafcfd37c1f1"},{url:"/_next/static/runtime/webpack-c212667a5f965e81e004.js",revision:"f5e6e2fca3144cc944812cfa3547f475"},{url:"/_redirects",revision:"f0e873e18c0c7952d428d21b8bef25e3"},{url:"/icons/android-chrome-192x192.png",revision:"8c30caf2937dad4e4181e2cc7c3d3c8f"},{url:"/icons/apple-touch-icon.png",revision:"aa84b3913187950cf4e4079e5a5a2f78"},{url:"/icons/favicon.ico",revision:"940cc6bd3bb401fc3be83df3dfd09488"},{url:"/icons/icon-512x512.png",revision:"837ab4469c705c188326cec571ecb227"},{url:"/manifest.json",revision:"688128be216cc2f753fe641590f2fcd3"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute(/^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/^https:\/\/use\.fontawesome\.com\/releases\/.*/i,new e.CacheFirst({cacheName:"font-awesome",plugins:[new e.ExpirationPlugin({maxEntries:1,maxAgeSeconds:31536e3,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.StaleWhileRevalidate({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/.*/i,new e.StaleWhileRevalidate({cacheName:"others",plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET")}));
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  const singleRequire = name => {
+    if (name !== 'require') {
+      name = name + '.js';
+    }
+    let promise = Promise.resolve();
+    if (!registry[name]) {
+      
+        promise = new Promise(async resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = name;
+            document.head.appendChild(script);
+            script.onload = resolve;
+          } else {
+            importScripts(name);
+            resolve();
+          }
+        });
+      
+    }
+    return promise.then(() => {
+      if (!registry[name]) {
+        throw new Error(`Module ${name} didn’t register its module`);
+      }
+      return registry[name];
+    });
+  };
+
+  const require = (names, resolve) => {
+    Promise.all(names.map(singleRequire))
+      .then(modules => resolve(modules.length === 1 ? modules[0] : modules));
+  };
+  
+  const registry = {
+    require: Promise.resolve(require)
+  };
+
+  self.define = (moduleName, depsNames, factory) => {
+    if (registry[moduleName]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    registry[moduleName] = Promise.resolve().then(() => {
+      let exports = {};
+      const module = {
+        uri: location.origin + moduleName.slice(1)
+      };
+      return Promise.all(
+        depsNames.map(depName => {
+          switch(depName) {
+            case "exports":
+              return exports;
+            case "module":
+              return module;
+            default:
+              return singleRequire(depName);
+          }
+        })
+      ).then(deps => {
+        const facValue = factory(...deps);
+        if(!exports.default) {
+          exports.default = facValue;
+        }
+        return exports;
+      });
+    });
+  };
+}
+define("./sw.js",['./workbox-1020e92d'], function (workbox) { 'use strict';
+
+  /**
+  * Welcome to your Workbox-powered service worker!
+  *
+  * You'll need to register this file in your web app.
+  * See https://goo.gl/nhQhGp
+  *
+  * The rest of the code is auto-generated. Please don't update this file
+  * directly; instead, make changes to your Workbox build configuration
+  * and re-run your build process.
+  * See https://goo.gl/2aRDsh
+  */
+
+  importScripts();
+  self.addEventListener('message', event => {
+    if (event.data && event.data.type === 'SKIP_WAITING') {
+      self.skipWaiting();
+    }
+  });
+  workbox.clientsClaim();
+  /**
+   * The precacheAndRoute() method efficiently caches and responds to
+   * requests for URLs in the manifest.
+   * See https://goo.gl/S9QRab
+   */
+
+  workbox.precacheAndRoute([{
+    "url": "/_next/static/runtime/amp.js",
+    "revision": "2fdd189ea17faa56a4f44a2fdd88b84f"
+  }, {
+    "url": "/_next/static/runtime/main.js",
+    "revision": "4bd0410c921b8bc0565fb139d435b005"
+  }, {
+    "url": "/_next/static/runtime/polyfills.js",
+    "revision": "516c3d4deeff70783126396a5a14d34e"
+  }, {
+    "url": "/_next/static/runtime/react-refresh.js",
+    "revision": "9d11ea7095b60a828f2db49ed1004ade"
+  }, {
+    "url": "/_next/static/runtime/webpack.js",
+    "revision": "9f07bbcf6cbc60d4e063f7cdd0ab69bb"
+  }], {
+    "ignoreURLParametersMatching": [/ts/]
+  });
+  workbox.cleanupOutdatedCaches();
+
+});
+//# sourceMappingURL=sw.js.map

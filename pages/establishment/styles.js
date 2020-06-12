@@ -63,12 +63,37 @@ export const Card = styled.div`
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.11);
   border-radius: 10px;
   margin: 10px 10px 25px 10px;
+  transition: all 0.3s ease-in-out;
   @media(min-width: 768px) {
     margin: 15px;
   }
   & img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    min-width: 300px;
+    /* height: 385px; */
+    top: 0;
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+  }
+  /* ${props => props.disabled ? '' : ''}; */
+  &:hover {
+    transform: scale(1.1);
+    & .bg-image {
+      background: linear-gradient(180deg,rgba(0, 0, 0, 0) 76.56%, rgba(0,0,0,0.7) 100%);
+    }
+  }
+
+  &:hover::after {
+    opacity: 1;
   }
   .info {
     padding: 10px 15px 15px 15px;
