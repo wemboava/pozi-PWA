@@ -15,7 +15,7 @@ const Dashboard = () => {
         <h2>Procure por estabelecimentos feitos para você!</h2>
         <List>
           <li>
-            <Link href="/establishment/[restaurante]" as={`/establishment/${'restaurante'}`}>
+            <Link href="/establishment">
               <a>
                 <div className="bg-image"></div>
                 <img src="/static/images/pousada.png" />
@@ -24,7 +24,7 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <Link href="/establishment/[restaurante]" as={`/establishment/${'restaurante'}`}>
+            <Link href="/establishment" as={`/establishment/${'restaurante'}`}>
               <a>
                 <div className="bg-image"></div>
                 <img src="/static/images/posto-gasolina.png" />
@@ -33,22 +33,14 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <Link href="/establishment/[restaurante]" as={`/establishment/${'restaurante'}`}>
-              <a>
-                <div className="bg-image"></div>
-                <img src="/static/images/hospital.png" />
-                <span>Hospitais</span>
-              </a>
-            </Link>
+            <div className="bg-image"></div>
+            <img src="/static/images/hospital.png" />
+            <span>Hospitais</span>
           </li>
           <li>
-            <Link href="/establishment/[restaurante]" as={`/establishment/${'restaurante'}`}>
-              <a>
-                <div className="bg-image"></div>
-                <img src="/static/images/restaurante.png" />
-                <span>Restaurante</span>
-              </a>
-            </Link>
+            <div className="bg-image"></div>
+            <img src="/static/images/restaurante.png" />
+            <span>Restaurante</span>
           </li>
           <li>
             <Link href="/establishment/[restaurante]" as={`/establishment/${'restaurante'}`}>
