@@ -16,6 +16,11 @@ const Login = () => {
       ...user,
       [event.target.name]: [event.target.value]
     })
+  }, [user, setUser])
+
+  const handleLogin = useCallback(event => {
+    event.preventDefault();
+    router.push('/');
   }, [])
 
   return (
@@ -40,7 +45,7 @@ const Login = () => {
             placeholder="Senha"
           />
 
-          <Button onClick={() => {}}>Entrar</Button>
+          <Button onClick={handleLogin}>Entrar</Button>
         </form>
 
         <Footer>
