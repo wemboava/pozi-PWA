@@ -3,8 +3,10 @@ import { useRouter } from 'next/router'
 
 import Header from '../../../components/header';
 
+import Comments from '../../../components/comments';
 import RatingBar from '../../../components/rating-bar';
 import Ratings from '../../../components/star-ratings';
+import Differentials from '../../../components/differentials';
 
 import { Container, Content } from './styles';
 
@@ -25,6 +27,9 @@ const Dashboard = () => {
       </div>
       <Content>
         <h2>Detalhes do estabelecimento</h2>
+        <div className="differentials">
+          <Differentials />
+        </div>
         <div className="evaluation">
           <div className="evaluation__averages">
             <RatingBar rate={100} title="Limpeza" />
@@ -38,7 +43,8 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="comments">
-          
+          <h3>Comentários:</h3>
+          <Comments />
         </div>
       </Content>
     </Container>

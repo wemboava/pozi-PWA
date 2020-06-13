@@ -21,6 +21,7 @@ export const Content = styled.section`
     color: #6D6966;
     text-align: center;
     font-size: 1.5em;
+    padding: 0 10px;
   }
 `;
 

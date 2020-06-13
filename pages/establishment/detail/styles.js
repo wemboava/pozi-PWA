@@ -39,12 +39,19 @@ export const Content = styled.section`
   & h2 {
     color: #6D6966;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.7em;
   }
-
+  & h3 {
+    color: #6D6966;
+    font-size: 1.5em;
+    margin: 40px 0 20px 0;
+  }
+  .differentials {
+    margin: 20px 0;
+  }
   .evaluation {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0;
     color: #6D6966;
     justify-content: space-between;
     &__averages {
