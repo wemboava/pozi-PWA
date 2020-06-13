@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-const Ratings = ({ reviews, rate = 3, starSize = '35px', starColor = '#ffc107', starColorDisabled = '#DEDFE0', starColorHover = '#f9de8d', onlyReading, onStarClick }) => {
+const Ratings = ({ reviews, rate = 3, starSize = '35px', starColor = 'rgba(255, 214, 0, 0.85);', starColorDisabled = '#DEDFE0', starColorHover = '#f9de8d', onlyReading, onStarClick }) => {
   const rateStars = onlyReading => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {

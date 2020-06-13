@@ -2,6 +2,8 @@ import React from 'react';
 import { useRouter } from 'next/router'
 
 import Header from '../../../components/header';
+
+import RatingBar from '../../../components/rating-bar';
 import Ratings from '../../../components/star-ratings';
 
 import { Container, Content } from './styles';
@@ -23,7 +25,21 @@ const Dashboard = () => {
       </div>
       <Content>
         <h2>Detalhes do estabelecimento</h2>
-        ...
+        <div className="evaluation">
+          <div className="evaluation__averages">
+            <RatingBar rate={100} title="Limpeza" />
+            <RatingBar rate={70} title="Segurança" />
+            <RatingBar rate={80} title="Atendimento" />
+          </div>
+          <div className="evaluation__ratings">
+            <span className="evaluation__ratings__count">4,0</span>
+            <Ratings onlyReading rate={4} starSize="18px" />
+            <span className="evaluation__ratings__comments">125 comentários</span>
+          </div>
+        </div>
+        <div className="comments">
+          
+        </div>
       </Content>
     </Container>
   );

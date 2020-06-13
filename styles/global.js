@@ -14,7 +14,7 @@ export default createGlobalStyle`
     }
 
     body {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
       font-style: normal;
 
       max-width: 100vw;
@@ -78,7 +78,7 @@ export default createGlobalStyle`
     h1, h2, h3, h4, h5,
     span {
       user-select: auto;
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
       font-style: normal;
       /* font-weight: normal; */
       text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -88,7 +88,7 @@ export default createGlobalStyle`
     input,
     input[type="range"] {
       outline: none;
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
       font-size: 1em;
       &:active, &:focus {
         outline: none;
@@ -137,7 +137,7 @@ export default createGlobalStyle`
     }
 
     button {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      font-family: 'Roboto', Helvetica, Arial, sans-serif;
     }
 
     a, a:hover, a:active, a:visited {

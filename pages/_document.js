@@ -2,8 +2,8 @@ import Document, { Head, Main, NextScript } from 'next/document'
 
 import { ServerStyleSheet } from 'styled-components'
 
-const APP_NAME = 'next-pwa example'
-const APP_DESCRIPTION = 'This is an example of using next-pwa plugin'
+const APP_NAME = 'POZI'
+const APP_DESCRIPTION = 'Pesquise por estabelecimentos feitos para você caminhoneiro!'
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -43,14 +43,15 @@ export default class extends Document {
           <meta name='description' content={APP_DESCRIPTION} />
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
-          <meta name='theme-color' content='#FFFFFF' />
+          <meta name='theme-color' content='#F5762A' />
           <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
-          
+
           <link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
           <link rel='manifest' href='/manifest.json' />
           <link rel='shortcut icon' href='/icons/favicon.ico' />
 
           <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></link>
           <style>{
             `
             html, body, #__next {

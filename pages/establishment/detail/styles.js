@@ -25,7 +25,7 @@ export const Content = styled.section`
 
   background-color: #fff;
   border-radius: 45px 45px 0px 0px;
-  padding: 30px 10px;
+  padding: 30px;
   margin: auto;
   margin-top: 20px;
   transition: .4s;
@@ -39,8 +39,34 @@ export const Content = styled.section`
   & h2 {
     color: #6D6966;
     text-align: center;
-    font-size: 1.8em;
-    text-transform: capitalize;
+    font-size: 1.6em;
+  }
+
+  .evaluation {
+    display: flex;
+    margin-top: 20px;
+    color: #6D6966;
+    justify-content: space-between;
+    &__averages {
+      width: 60%;
+      margin-right: 15px;
+    }
+    &__ratings {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &__count {
+        font-weight: bold;
+        font-size: 3.5em;
+        margin-bottom: 5px;
+      }
+      &__comments {
+        font-size: .9em;
+        margin-top: 5px;
+      }
+    }
   }
 `;
 

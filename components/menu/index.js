@@ -14,6 +14,7 @@ const Menu = ({ isOpened, handleClose }) => {
             <path d="M2 2L30 29M2 29L30 2" stroke="black" strokeWidth="3"/>
           </svg>
         </div>
+        <button onClick={() => {router.push('/login')}}>Login</button>
       </MenuContent>
     </MenuWrapper>
   );
