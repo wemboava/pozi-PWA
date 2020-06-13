@@ -4,8 +4,8 @@ const withImages = require('next-images')
 module.exports = withPWA({
   pwa: {
     dest: 'public',
-    register: false,
-    skipWaiting: false
+    register: true,
+    skipWaiting: true
   },
   withImages: withImages()
 })
