@@ -49,11 +49,10 @@ const MyMarkersList = ({ markers, currentPosition }) => {
 }
 
 const MapComponent = ({ category }) => {
-  const [initialPosition, setInicialPosition] = useState([0, 0]);
+  const [initialPosition, setInicialPosition] = useState([-23.2385055, -45.8844243]);
   const [markers, setMarkers] = useState([]);
 
   useEffect(() => {
-    // função que retorna a localização atual em coordenadas.
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;
       setInicialPosition([latitude, longitude]);

@@ -5,9 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "HOST=192.168.0.31 next",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start --host 192.168.0.31"
   },
   "dependencies": {
     "axios": "^0.19.2",

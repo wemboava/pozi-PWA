@@ -2,6 +2,8 @@ import React, { useState, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
+import api from '../../services/api';
+
 import Input from '../../components/input';
 import Button from '../../components/button';
 
@@ -18,8 +20,11 @@ const Login = () => {
     })
   }, [user, setUser])
 
-  const handleLogin = useCallback(event => {
+  const handleLogin = useCallback(async event => {
     event.preventDefault();
+    
+    await api.post('/auth/login/trucker', user);
+
     router.push('/');
   }, [])
 
