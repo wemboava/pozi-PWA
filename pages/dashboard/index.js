@@ -33,7 +33,7 @@ const Dashboard = () => {
             </Link>
           </li>
           <li>
-            <Link href="/establishment/[category]" as={`/establishment/${'hospital'}`}>
+            <Link href="/establishment/hospital">
               <a>
                 <div className="bg-image"></div>
                 <img src="/static/images/hospital.png" />
