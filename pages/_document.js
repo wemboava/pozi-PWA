@@ -52,6 +52,13 @@ export default class extends Document {
 
           <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"></link>
           <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></link>
+          <link 
+            rel="stylesheet" 
+            href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""
+          />
+
           <style>{
             `
             html, body, #__next {

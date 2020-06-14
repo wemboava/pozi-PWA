@@ -81,7 +81,7 @@ if (!self.define) {
     });
   };
 }
-define("./sw.js",['./workbox-1020e92d'], function (workbox) { 'use strict';
+define("./sw.js",['./workbox-b90066a8'], function (workbox) { 'use strict';
 
   /**
   * Welcome to your Workbox-powered service worker!
@@ -96,11 +96,7 @@ define("./sw.js",['./workbox-1020e92d'], function (workbox) { 'use strict';
   */
 
   importScripts();
-  self.addEventListener('message', event => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-      self.skipWaiting();
-    }
-  });
+  workbox.skipWaiting();
   workbox.clientsClaim();
   /**
    * The precacheAndRoute() method efficiently caches and responds to
@@ -113,7 +109,7 @@ define("./sw.js",['./workbox-1020e92d'], function (workbox) { 'use strict';
     "revision": "2fdd189ea17faa56a4f44a2fdd88b84f"
   }, {
     "url": "/_next/static/runtime/main.js",
-    "revision": "4bd0410c921b8bc0565fb139d435b005"
+    "revision": "b4045e586c7fec7bee46dc979cfe9c01"
   }, {
     "url": "/_next/static/runtime/polyfills.js",
     "revision": "516c3d4deeff70783126396a5a14d34e"
@@ -122,7 +118,7 @@ define("./sw.js",['./workbox-1020e92d'], function (workbox) { 'use strict';
     "revision": "9d11ea7095b60a828f2db49ed1004ade"
   }, {
     "url": "/_next/static/runtime/webpack.js",
-    "revision": "7464af639b8283be9235a374201c940e"
+    "revision": "96cd0b6305c324dba7cf390b1ec1aae0"
   }], {
     "ignoreURLParametersMatching": [/ts/]
   });
