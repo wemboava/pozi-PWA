@@ -10,7 +10,69 @@ import { Container, Content, List, Card } from './styles';
 const Dashboard = () => {
   const router = useRouter()
 
+  // dormir
+  // hospitais
+  // mecanicas
+  // comida
+
+  const data = [
+    {
+      category: 'pousada',
+      items: [
+        {
+          name: 'Renovias',
+          img: 'renovias',
+          rate: 5,
+          aberto: true,
+        },
+        {
+          name: 'Parada obrigatória',
+          img: 'parada-obrigatoria',
+          rate: 4,
+          aberto: false,
+        },
+      ]
+    },
+    {
+      category: 'mecanico',
+      items: [
+        {
+          name: 'Diesel Zimmer',
+          img: 'diesel-zimmer',
+          rate: 5,
+          aberto: true,
+        },
+        {
+          name: 'D S Mecânica Diesel',
+          img: 'd-s-mecanica-diesel',
+          rate: 4,
+          aberto: false,
+        },
+      ]
+    },
+    {
+      category: 'restaurante',
+      items: [
+        {
+          name: 'Frango Assado',
+          img: 'frango-assado',
+          rate: 5,
+          aberto: true,
+        },
+        {
+          name: 'Sabor do Sertão',
+          img: 'sabor-do-sertao',
+          rate: 4,
+          aberto: false,
+        },
+      ]
+    },
+  ]
+
   const { category } = router.query;
+
+  const dataByCategory = data.find(item => item.category === category);
+
   return (
     <Container>
       <Header />
@@ -26,238 +88,41 @@ const Dashboard = () => {
       <Content>
         <h2>{ category }s</h2>
         <List>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={5} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Aberto</span> - Fecha às 22:00 - 4km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/establishment/detail">
-              <a>
-                <Card isOpen={false}>
-                  <div className="bg-image"></div>
-                  <img src="/static/images/frango-assado.jpg" />
-                  <div className="info">
-                    <div className="info__row-one">
-                      <h4>Frango Assado</h4>
-                      <Ratings onlyReading rate={4} starSize="15px" />
-                    </div>
-                    <div className="info__row-two">
-                      <span>
-                        <span className="is-open">Fechado</span> - Abre às 08:00 - 10km
-                      </span>
-                    </div>
-                    <div className="info__row-three">
-                      <span>
-                        Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
-                      </span>
-                    </div>
-                    <div className="info__row-four">
-                      <button>Detalhes das avaliações</button>
-                    </div>
-                  </div>
-                </Card>
-              </a>
-            </Link>
-          </li>
+          {
+            dataByCategory.items &&
+            dataByCategory.items.map(item =>
+              <li>
+                <Link href="/establishment/detail">
+                  <a>
+                    <Card isOpen={item.aberto}>
+                      <div className="bg-image"></div>
+                      <img src={`/static/images/establishments/${item.img}.png`} />
+                      <div className="info">
+                        <div className="info__row-one">
+                          <h4>{item.name}</h4>
+                          <Ratings onlyReading rate={item.rate} starSize="15px" />
+                        </div>
+                        <div className="info__row-two">
+                          <span>
+                            <span className="is-open">{item.aberto ? 'Aberto' : 'Fechado'}</span> - Fecha às 22:00 - 4km
+                          </span>
+                        </div>
+                        <div className="info__row-three">
+                          <span>
+                            Av. Standard - nº 833 - Tres Portos, Esteio - RS, 93270-000
+                          </span>
+                        </div>
+                        <div className="info__row-four">
+                          <button>Detalhes das avaliações</button>
+                        </div>
+                      </div>
+                    </Card>
+                  </a>
+                </Link>
+              </li>
+            )
+          }
+          
         </List>
       </Content>
     </Container>
