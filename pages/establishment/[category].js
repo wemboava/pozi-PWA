@@ -89,7 +89,7 @@ const Dashboard = () => {
         <h2>{ category }s</h2>
         <List>
           {
-            dataByCategory.items &&
+            dataByCategory &&
             dataByCategory.items.map(item =>
               <li>
                 <Link href="/establishment/detail">
