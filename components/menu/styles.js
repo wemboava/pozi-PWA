@@ -31,4 +31,53 @@ export const MenuContent = styled.div`
     display: flex;
     justify-content: flex-end;
   }
+
+  & .user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    img {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      min-height: 40px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      color: #6A6A6A;
+      &__name {
+        font-size: 1.3em;
+        font-weight: 600;
+      }
+      &__score {
+        font-size: .9em;
+        font-weight: 200;
+      }
+    }
+  }
+  & .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    color: #6A6A6A;
+    font-size: 1.2em;
+    font-weight: 500;
+    &__main {
+      display: flex;
+      flex-direction: column;
+      & a {
+        display: block;
+      }
+      & a + a {
+        margin-top: 20px;
+      }
+    }
+    &__logout {
+
+    }
+  }
 `;

@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "HOST=192.168.0.31 next",
+    "dev": "next",
     "build": "next build && next export",
     "start": "next start --host 192.168.0.31"
   },

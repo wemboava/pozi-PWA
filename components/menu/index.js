@@ -14,7 +14,20 @@ const Menu = ({ isOpened, handleClose }) => {
             <path d="M2 2L30 29M2 29L30 2" stroke="black" strokeWidth="3"/>
           </svg>
         </div>
-        <button onClick={() => {router.push('/login')}}>Login</button>
+        <div className="user">
+          <img src="/static/images/ivone.png" />
+          <div className="user__info">
+            <span className="user__info__name">Ivone Silva</span>
+            <span className="user__info__score">580 pontos</span>
+          </div>
+        </div>
+        <div className="options">
+          <div className="options__main">
+            <a onClick={() => {router.push('/login')}}>Parceiros</a>
+            <a onClick={() => {router.push('/login')}}>Histórico de pontos</a>
+          </div>
+          <a className="options__logout" onClick={() => {router.push('/login')}}>Sair</a>
+        </div>
       </MenuContent>
     </MenuWrapper>
   );
