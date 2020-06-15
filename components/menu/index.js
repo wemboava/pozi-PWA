@@ -23,8 +23,9 @@ const Menu = ({ isOpened, handleClose }) => {
         </div>
         <div className="options">
           <div className="options__main">
-            <a onClick={() => {router.push('/login')}}>Parceiros</a>
-            <a onClick={() => {router.push('/login')}}>Histórico de pontos</a>
+            <a onClick={() => {router.push('/')}}>Parceiros</a>
+            <a onClick={() => {router.push('/')}}>Histórico de pontos</a>
+            <a onClick={() => {router.push('/')}}>Editar Perfil</a>
           </div>
           <a className="options__logout" onClick={() => {router.push('/login')}}>Sair</a>
         </div>

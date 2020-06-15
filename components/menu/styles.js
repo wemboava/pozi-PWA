@@ -35,7 +35,7 @@ export const MenuContent = styled.div`
   & .user {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     img {
       width: 40px;
       min-width: 40px;
@@ -64,7 +64,7 @@ export const MenuContent = styled.div`
     justify-content: space-between;
     height: 60%;
     color: #6A6A6A;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 500;
     &__main {
       display: flex;
@@ -73,7 +73,7 @@ export const MenuContent = styled.div`
         display: block;
       }
       & a + a {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
     &__logout {
