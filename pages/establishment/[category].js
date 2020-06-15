@@ -67,6 +67,23 @@ const Dashboard = () => {
         },
       ]
     },
+    {
+      category: 'posto',
+      items: [
+        {
+          name: 'Renovias',
+          img: 'renovias',
+          rate: 5,
+          aberto: true,
+        },
+        {
+          name: 'Parada obrigatória',
+          img: 'parada-obrigatoria',
+          rate: 4,
+          aberto: false,
+        },
+      ]
+    },
   ]
 
   const { category } = router.query;
@@ -122,7 +139,6 @@ const Dashboard = () => {
               </li>
             )
           }
-          
         </List>
       </Content>
     </Container>
