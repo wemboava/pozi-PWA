@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "next start --host 192.168.0.31"
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^0.19.2",
